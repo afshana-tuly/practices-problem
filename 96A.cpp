@@ -1,8 +1,8 @@
 #include <iostream>
 #include <string>
-
+ 
 using namespace std;
-
+ 
 int main() {
     string s;
     cin >> s;
@@ -10,7 +10,7 @@ int main() {
     int count = 1;
     int n = s.length();
     int found = 0;
-
+ 
     for(int i = 0; i < n - 1; i++){
         if(s[i] == s[i + 1]){
             count++;
@@ -22,12 +22,12 @@ int main() {
             count = 1; 
         }
     }
-
+ 
     if(found){
         cout << "YES" << endl;
     } else {
         cout << "NO" << endl;
     }
-
+ 
     return 0;
 }
